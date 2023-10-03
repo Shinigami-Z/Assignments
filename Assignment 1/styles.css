@@ -8,12 +8,21 @@ html {
     scroll-behavior: smooth;
     font-family: "Times New Roman", Times, serif;
 }
-.container {
-    min-height: 100vh;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+
+/* Header section */
+header {
+    min-height: 8vh;
+    background-color: #000000;
+    transition: 0.3s ease background-color;
+}
+.Navigation {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
 }
 .logo h1 {
     font-size: 2.3rem;
@@ -32,23 +41,7 @@ html {
     color: #47060b;
     text-align: center;
 }
-
-/* Header section */
-header {
-    min-height: 8vh;
-    background-color: #000000;
-    transition: 0.3s ease background-color;
-}
-.Navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    max-width: 1300px;
-    padding: 0 10px;
-}
- nav ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -102,6 +95,7 @@ li a:hover:not(.active) {
     z-index: -1;
 }
 #home h1 {
+    padding-top: 20px;
     display: block;
     width: fit-content;
     font-size: 4rem;
@@ -142,8 +136,8 @@ li a:hover:not(.active) {
 footer {
     min-height: 100px;
     flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #4d4d4d;
 }
 .footerBox {
@@ -201,3 +195,125 @@ footer .logo p {
     }
 }
 /* End Keyframes */
+
+
+/* Contact Section */
+#contact .container h1 {
+    text-align: center;
+    padding-top: 5px;
+}
+#contact .container label {
+    font-size: 20px;
+}
+#contact input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    resize: vertical
+}
+#contact input[type=number], select, textarea {
+    font-size: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    resize: vertical
+}
+#contact input[type=email], select, textarea {
+    font-size: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    resize: vertical
+}
+#contact input[type=submit] {
+    font-size: 10px;
+    background-color: #23472c;
+    color: #47060b;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 47%;
+}
+#contact input[type=submit]:hover {
+    background-color: #ffffff;
+}
+#contact .container {
+    background: #23472c;
+    background: -moz-linear-gradient(top, #23472c 0%, #4d4d4d 100%);
+    background: -webkit-linear-gradient(top, #23472c 0%, #4d4d4d 100%);
+    background: -o-linear-gradient(top, #23472c 0%, #4d4d4d 100%);
+    background: linear-gradient(to bottom, #23472c 0%, #4d4d4d 100%);
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+#contact::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+}
+/* End Contact Section */
+
+/* About Section */
+.section-A{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    background-position: center;
+}
+
+.About-box {
+    width: 300px;
+    height: fit-content;
+    border: 3px solid red;
+    display: inline-block;
+}
+
+.About-box img {
+    width: 50%;
+    height: 150px;
+    margin-left: 80px;
+    border-radius: 30%;
+    border: 1px solid red;
+    object-fit: fill;
+}
+
+.video-player{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.video-player video{
+    border: 5px solid #da0f59;
+}
+
+
+
+
+
